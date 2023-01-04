@@ -89,13 +89,14 @@ body {
 /*роблю оформлення header*/
 .header{
     color: var(--title-text-color);
+    border-bottom: 1px solid #E7E9FC;
+        box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
     display: flex;
     align-items: center;
 
-    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-navigation {
@@ -149,6 +150,8 @@ body {
     color: #404BBF;
 
 }
+
+
 
 .contacts {
     color: var(--primary-text-color);
@@ -354,6 +357,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: var(--primary-brand-color);
+    fill: var(--light-color);
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -390,33 +394,69 @@ body {
     text-transform: capitalize;
 }
 
-.ul-customers {
+.ul-customers{
     display: flex;
     justify-content: center;
-    align-items: center;
     gap: 24px;
 }
 
-.list-customers{
+.li-customers {
     
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    list-style-type: none;
 }
 
 .customers-link {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+    border: 1px solid #8E8F99;
+    border-radius: 4px;
 }
 
-.customers-icon{
+.customers-icon {
+    width: 168px;
+    height: 88px;
 
+    fill: #8E8F99;
+    padding: 16px 32px;
 }
+
+.customers-link:hover,
+.customers-link:focus,
+.customers-link.active {
+    border-color:  #404BBF;
+}
+
+.customers-link:hover .customers-icon,
+.customers-link:focus .customers-icon,
+.customers-link.active .customers-icon {
+    fill: #404BBF;
+    border-color: #404BBF;
+}
+
+
 
 /*футер*/
 .footer {
     background-color: var(--title-text-color);
     padding-top: 100px;
     padding-bottom: 100px;
+
 }
 
-
+.footer-flex {
+    display: flex;
+    gap: 120px;
+}
 
 .logo-footer {
     color: var(--light-color);
@@ -441,6 +481,55 @@ body {
     
 }
 
+.footer-social{
+    width: 208px;
+}
+
+.footer-title {
+    margin-bottom: 16px;    
+    color: #FFFFFF;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(24/16);
+    letter-spacing: 0.02em;
+    
+}
+
+.ul-icon-footer {
+    display: flex;
+    gap: 16px;
+
+}
+
+.li-icon-footer {
+    width: 40px;
+    height: 40px;
+}
+
+.link-icon-footer {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    fill: var(--light-color);
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    cursor: pointer;
+}
+
+.icon-footer{
+    fill: var(--light-color);
+}
+
+.link-icon-footer:hover,
+.link-icon-footer:focus {
+    background-color: #31D0AA;
+}
 
 /*сторінка портфоліо*/
 /*секція з кнопками*/
@@ -483,6 +572,7 @@ body {
 
 .portfolio-li {
     margin-top: 72px;
+    width: 1158px;
 
     display: flex;
     flex-wrap: wrap;
@@ -490,7 +580,15 @@ body {
     row-gap: 48px;
 }
 
-.list-portfolio {
+.list-portfolio{
+    border: 1px solid #E7E9FC;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.list-portfolio:hover,
+.list-portfolio:focus {
+    border: 0.5px solid #F4F4FD;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
      
 }
 
